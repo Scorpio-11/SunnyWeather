@@ -43,7 +43,7 @@ class PlaceAdapter(private val fragment: PlaceFragment,private val placeList:Lis
                     putExtra("location_lat",place.location.lat)
                     putExtra("place_name",place.name)
                 }
-                fragment.viewModel.savePlace(place)
+                fragment.startActivity(intent)
                 activity?.finish()
             }
             fragment.viewModel.savePlace(place)

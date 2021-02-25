@@ -65,7 +65,6 @@ class WeatherActivity : AppCompatActivity() {
         })
         if (viewModel.locationLng.isEmpty()) {
             viewModel.locationLng = intent.getStringExtra("location_lng") ?: ""
-            Log.d("WeatherActivity", "locationLng is ${viewModel.locationLng}")
         }
         if (viewModel.localtionLat.isEmpty()) {
             viewModel.localtionLat = intent.getStringExtra("location_lat") ?: ""
